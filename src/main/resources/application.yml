@@ -1,0 +1,24 @@
+spring:
+  application:
+   name: gg_store
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/answer.mail.ru"
+    username: "postgres"
+    password: "0211"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    jdbc:
+      dialect: postgresql
+token:
+  signing:
+   key: '03d2430e18744da8db2b8dbd64a64977be5c1a7f06d52197c9b8113a3b552c69'
+
+
+api:
+ version: v1
+server:
+  port: 8080
